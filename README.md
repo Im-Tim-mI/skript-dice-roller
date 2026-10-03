@@ -6,6 +6,18 @@ Roll one, two or three six-sided dice; the result is shown to everyone in the sa
 
 > This repository has two editions of the same script: **繁體中文 (zh-TW)** is the original used on the author's Traditional Chinese server, and **English** is a full translation (commands, messages and variable names) with the same features.
 
+<!-- BEGIN LIVE SCREENSHOTS -->
+
+## Screenshots
+
+![Dice roll output in chat](docs/images/dice-rolls.png)
+
+*One, two and three dice rolled in sequence. These are the actual random results the server broadcast to the player's world.*
+
+> These are live-server captures, not native client screenshots. A headless client logged into a real Paper 26.2 server, triggered the script, and the block / UI data the server sent back was re-rendered using the official Minecraft 26.2 client assets. Mojang/Microsoft image assets are not covered by this repository's code licence.
+
+<!-- END LIVE SCREENSHOTS -->
+
 ## Features
 
 - Three commands for 1, 2 or 3 dice, with the total
