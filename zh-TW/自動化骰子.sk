@@ -1,0 +1,39 @@
+# ------------------------------------------------------------
+#  skript-dice-roller（繁體中文版）
+#  https://github.com/Im-Tim-mI/skript-dice-roller
+#  Copyright (c) 2026 廷廷小教室、廷廷的家（Tim945）
+#  授權：MIT + Commons Clause（詳見 LICENSE）
+# ------------------------------------------------------------
+
+# ========================================
+#  擲骰系統 (1~6) - 同世界聊天室廣播
+#  所有玩家皆可使用
+# ========================================
+
+command /一顆骰字:
+    trigger:
+        set {_d1} to a random integer between 1 and 6
+
+        loop all players in player's world:
+            send "&e%player's name% &f第一顆:&a%{_d1}%" to loop-player
+
+
+command /二顆骰字:
+    trigger:
+        set {_d1} to a random integer between 1 and 6
+        set {_d2} to a random integer between 1 and 6
+        set {_sum} to {_d1} + {_d2}
+
+        loop all players in player's world:
+            send "&e%player's name% &f第一顆:&a%{_d1}% &f第二顆:&a%{_d2}% &f共骰到:&6%{_sum}%" to loop-player
+
+
+command /三顆骰字:
+    trigger:
+        set {_d1} to a random integer between 1 and 6
+        set {_d2} to a random integer between 1 and 6
+        set {_d3} to a random integer between 1 and 6
+        set {_sum} to {_d1} + {_d2} + {_d3}
+
+        loop all players in player's world:
+            send "&e%player's name% &f第一顆:&a%{_d1}% &f第二顆:&a%{_d2}% &f第三顆:&a%{_d3}% &f共骰到:&6%{_sum}%" to loop-player
